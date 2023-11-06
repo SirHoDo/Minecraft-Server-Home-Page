@@ -17,7 +17,7 @@
 
 ## About The Project
 
-![Project Screenshot](https://iungo.info/images/banner-example.png)
+![Project Screenshot](https://iungo.info/images/banner-example-1.png)
 
 Welcome to the Server Card project, where we aim to simplify the process of sharing your Minecraft server details with your community. This project is designed to create "Server Cards" that provide a quick overview of your Minecraft server, including its icon, name, IP address, MOTD (Message of the Day), and the number of online players.
 
