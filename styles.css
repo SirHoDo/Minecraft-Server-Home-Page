@@ -1,0 +1,120 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #333;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.server {
+    border: 2px solid #555;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    margin: 10px;
+    padding: 10px;
+    position: relative;
+    background-image: url('img/dirt_background.jpg');
+    background-size: cover; 
+    background-repeat: no-repeat;
+}
+
+.server-icon {
+    width: 64px;
+    height: 64px;
+    margin-right: 10px;
+    border: 1px solid #777;
+    border-radius: 5px;
+}
+
+.server-info {
+    flex: 1;
+}
+
+.server-name {
+    font-size: 18px;
+    font-weight: bold;
+    margin-right: 250px;
+}
+
+.server-ip {
+    font-size: 14px;
+    color: #888;
+    margin-right: 250px;
+}
+
+.server-status {
+    text-align: center;
+    background-color: #00ff00;
+    color: #000;
+    border: 1px solid #008000;
+    padding: 5px;
+    border-radius: 5px;
+    width: 60px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.online {
+    font-weight: bold;
+}
+
+.max-players {
+    font-weight: normal;
+}
+
+.shrink {
+    transform: scale(0.95);
+    transition: transform 0.5s;
+}
+
+.popup {
+    display: none;
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    z-index: 999;
+}
+
+.popup.show {
+    display: block;
+    animation: fadeOut 2s;
+}
+
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .server {
+        flex-direction: column;
+    }
+
+    .server-icon {
+        margin: 0 auto;
+    }
+
+    .server-name,
+    .server-ip {
+        margin-right: 0;
+    }
+
+    .server-status {
+        position: static;
+        margin-top: 10px;
+    }
+}
