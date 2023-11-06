@@ -1,26 +1,178 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FyreBlox Server Banner</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <div id="popup" class="popup">Copied IP to clipboard</div>
 
-    <div class="server" id="server-info">
-        <img class="server-icon" src="img/server_icon.jpg" alt="Icon"> 
-        <div class="server-info">
-            <div class="server-name">FyreBlox</div>
-            <div class="server-ip" data-ip="play.fyreblox.com"></div>
-            <div class="server-motd"></div>
-        </div>
-        <div class="server-status">
-            <span class="online">0</span>/<span class="max-players">0</span>
-        </div>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Landing Page</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/styles.css">
+</head>
+
+<body>
+  <div id="popup" class="popup">Copied IP to clipboard</div>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">My Server</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Server</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            Dropdown
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="#">Option 1</a>
+            <a class="dropdown-item" href="#">Option 2</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Option 3</a>
+          </div>
+        </li>
+      </ul>
     </div>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="script.js"></script>
+  </nav>
+
+  <main role="main">
+
+    <section class="jumbotron text-center color-black">
+      <div class="container">
+        <h1 class="text-white">My Minecraft Server</h1>
+        <p class="lead text-white">This is a very short description of my minecraft server, this website 
+          should be used as a starting point for the amazing website my minecraft server derserves!</p>
+        <p>
+          <a href="#" class="btn btn-primary my-2">Button 1</a>
+          <a href="#" class="btn btn-secondary my-2">Button 2</a>
+        </p>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+
+        <div class="py-5 text-center">
+          <img class="d-block mx-auto mb-4" src="assets/img/iungo-mascot.png" alt="" width="72" height="72">
+          <h2 class="text-white">Join the server!</h2>
+          <p class="lead text-white">Below is the live status of our minecraft server! Click the server card to copy the IP to your clipboard
+          </p>
+        </div>
+
+        <div class="server-container">
+          <div class="server" id="server-info">
+            <img class="server-icon" src="/assets/img/server_icon.jpg" alt="Icon">
+            <div class="server-info">
+              <div class="server-name">FyreBlox</div>
+              <div class="server-ip" data-ip="play.fyreblox.com"></div>
+              <div class="server-motd"></div>
+            </div>
+            <div class="server-status">
+              <span class="online">0</span>/<span class="max-players">0</span>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+
+          <div class="container">
+            <div class="card-deck mb-3 text-center">
+              <div class="card mb-4 shadow-sm">
+                <div class="card-header">
+                  <h4 class="my-0 font-weight-normal">Store</h4>
+                </div>
+                <div class="card-body">
+                  <h1 class="card-title pricing-card-title"><small class="text-muted">Donation Store</small></h1>
+                  <ul class="list-unstyled mt-3 mb-4">
+                    <li>1</li>
+                    <li>2</li>
+                    <li>3</li>
+                    <li>3</li>
+                  </ul>
+                  <button type="button" class="btn btn-lg btn-block btn-outline-primary">Visit</button>
+                </div>
+              </div>
+              <div class="card mb-4 shadow-sm">
+                <div class="card-header">
+                  <h4 class="my-0 font-weight-normal">Vote</h4>
+                </div>
+                <div class="card-body">
+                  <h1 class="card-title pricing-card-title"><small class="text-muted">Vote for us!</small></h1>
+                  <ul class="list-unstyled mt-3 mb-4">
+                    <li>1</li>
+                    <li>2</li>
+                    <li>3</li>
+                    <li>3</li>
+                  </ul>
+                  <button type="button" class="btn btn-lg btn-block btn-outline-primary">Visit</button>
+                </div>
+              </div>
+              <div class="card mb-4 shadow-sm">
+                <div class="card-header">
+                  <h4 class="my-0 font-weight-normal">Info</h4>
+                </div>
+                <div class="card-body">
+                  <h1 class="card-title pricing-card-title"><small class="text-muted">Server Info</small></h1>
+                  <ul class="list-unstyled mt-3 mb-4">
+                    <li>1</li>
+                    <li>2</li>
+                    <li>3</li>
+                    <li>3</li>
+                  </ul>
+                  <button type="button" class="btn btn-lg btn-block btn-outline-primary">Visit</button>
+                </div>
+              </div>
+            </div>
+
+            <footer class="pt-4 my-md-5 pt-md-5 border-top">
+              <div class="row">
+                <div class="col-12 col-md">
+                  <img class="mb-2" src="assets/img/iungo-mascot.png" alt="" width="24" height="24">
+                  <small class="d-block mb-3 text-muted">&copy; 2018-2023</small>
+                </div>
+                <div class="col-6 col-md">
+                  <h5 class="text-white">Features</h5>
+                  <ul class="list-unstyled text-small">
+                    <li><a class="text-muted" href="#">Cool stuff</a></li>
+                    <li><a class="text-muted" href="#">Things</a></li>
+                  </ul>
+                </div>
+                <div class="col-6 col-md">
+                  <h5 class="text-white">Resources</h5>
+                  <ul class="list-unstyled text-small">
+                    <li><a class="text-muted" href="#">Resource</a></li>
+                    <li><a class="text-muted" href="#">Resource 2 i guess</a></li>
+                  </ul>
+                </div>
+                <div class="col-6 col-md">
+                  <h5 class="text-white">About</h5>
+                  <ul class="list-unstyled text-small">
+                    <li><a class="text-muted" href="#">Team</a></li>
+                    <li><a class="text-muted" href="#">Terms</a></li>
+                  </ul>
+                </div>
+              </div>
+            </footer>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="assets/script.js"></script>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
+
 </html>
