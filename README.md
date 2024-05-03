@@ -8,7 +8,7 @@
 <br />
 <div align="center">
   <a href="https://iungo.info">
-    <img src="https://iungo.info/images/iungo-mascot.png" alt="Logo" width="80" height="80">
+    <img src="https://cdn.iungo.tech/u/iungo-mascot.png" alt="Logo" width="80" height="80">
   </a>
 
   <h3 align="center">Minecraft Server Home Page</h3>
@@ -17,7 +17,7 @@
 
 ## About The Project
 
-![Project Screenshot](https://iungo.info/images/banner-example-1.png)
+![Project Screenshot](https://cdn.iungo.tech/u/58a583b1-7afb-4d1a-b6b0-28603175fee6.png)
 
 Welcome to the Server Card project, where we aim to simplify the process of sharing your Minecraft server details with your community. This project is designed to create "Server Cards" that provide a quick overview of your Minecraft server, including its icon, name, IP address, MOTD (Message of the Day), and the number of online players.
 
